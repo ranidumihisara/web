@@ -1,0 +1,200 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure navigation bar stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative; /* Required for dropdown positioning */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #007bff;
+}
+
+.sub-nav {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 160px; /* Adjust width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-nav li {
+    margin-bottom: 5px;
+}
+
+.nav-item:hover .sub-nav {
+    display: block;
+}
+
+/* Software page specific styles */
+.software-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.software-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.software-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.software-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Center align title */
+}
+
+.software-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center; /* Center align description */
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for software page */
+
+.software-slider {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide-image {
+    width: 100%; /* Ensures the image fills its container */
+    display: block;
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    max-height: 300px; /* Set a maximum height to prevent images from becoming too large */
+}
+
+.software-item:hover .slide-image {
+    transform: scale(1.1); /* Example: enlarges image on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section styles */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section-heading {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Connect section styles */
+.connect-content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.media-links a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.media-links a:hover {
+    color: #007bff;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
