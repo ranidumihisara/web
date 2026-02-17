@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ranidu Mihisara</title>
+    <link rel="stylesheet" href="contact style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">RM</div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">Download</a></li>
+            <li><a href="https://www.pcguide.lk/author/mranidu123/">Articles</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-full">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form id="contact-form" action="https://formspree.io/f/mreaqjlr" method="POST">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Email address" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="ip_address" id="form-ip">
+                    <input type="hidden" name="location" id="form-location">
+                    <input type="hidden" name="device" id="form-device">
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <p id="form-status"></p>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Email</h3>
+                        <p>No EMAIL</p> 
+                    </div>
+                    <div class="info-card">
+                        <h3>Socials</h3>
+                        <p>Instagram: @ranidumihisara__</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ranidu Mihisara. | Turning Vision into Reality.<br>Design by your boy❤</p>
+        </div>
+    </footer>
+
+    <script src="contact script.js"></script>
+</body>
+</html>
